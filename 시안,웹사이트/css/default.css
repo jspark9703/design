@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+:root {
+  --main-color: #6f4a8e;
+  --stricky-color: #221f3b;
+  --bg-color: #050505;
+  --font-color: #ebebeb;
+  --font2-color: #ccc;
+  --margin1-margin: 16.66666666666667px;
+  --side-marigin: 26.66666666666667px;
+  --con_margin-margin: 10px;
+  --fontsize1-fontsize: 20px;
+  --fontsize2-fontsize: 10px;
+  --fontsize3-fontsize: 3.33333px;
+}
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  vertical-align: top;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body {
+  font-family: "Noto Sans KR";
+}
+.wrap {
+  width: 100%;
+  max-width: 425px;
+  margin: 0 auto;
+}

@@ -1,0 +1,95 @@
+@charset 'utf-8';
+
+section.sticky {
+  flex-flow: row nowrap;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 133.3333333333333px;
+  background-color: var(--stricky-color);
+}
+section.sticky > .playbox {
+  height: 66.66666666666667px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+section.sticky > .playbox > .play_img {
+  margin-left: 39.66666666666667px;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+}
+section.sticky > .playbox > .play_img > img {
+  width: 100%;
+  height: 100%;
+}
+section.sticky > .playbox > .play_info {
+  width: 150px;
+  margin-left: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+section.sticky > .playbox > .play_info > .name {
+  color: var(--font-color);
+  font-size: var(--fontsize2-fontsize);
+  font-weight: bold;
+}
+section.sticky > .playbox > .play_info > .artist {
+  color: var(--font2-color);
+  font-size: var(--fontsize2-fontsize);
+}
+section.sticky > .playbox > .play_btn {
+  width: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+}
+section.sticky > .playbox > .play_btn > .btn_play {
+  width: 22.66666666666667px;
+}
+section.sticky > .playbox > .play_btn > .btn_next {
+  width: 12px;
+  height: 8px;
+}
+section.sticky > .playbox > .play_btn > .btn_play > img,
+section.sticky > .playbox > .play_btn > .btn_next > img {
+  width: 100%;
+}
+section.sticky > .playbox > .play_line {
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+  bottom: 66.66666666666667px;
+}
+section.sticky > .playbox > .play_line::after {
+  content: "";
+  display: block;
+  background-color: var(--font-color);
+  width: 30%;
+  height: 1px;
+}
+section.sticky > .nav {
+  height: 66.66666666666667px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-top: 12px;
+}
+section.sticky > .nav > div {
+  height: 25px;
+  text-align: center;
+}
+section.sticky > .nav > div > img {
+  height: 100%;
+}
+section.sticky > .nav > div > .txt {
+  font-size: var(--fontsize2-fontsize);
+  color: var(--font-color);
+  font-weight: bold;
+  text-align: center;
+  line-height: 24px;
+}
