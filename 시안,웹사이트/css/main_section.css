@@ -1,0 +1,63 @@
+@charset 'utf-8';
+
+section.sections {
+  background-color: var(--bg-color);
+  padding-left: var(--side-marigin);
+  overflow: hidden;
+}
+section.sections > section > .tit {
+  font-size: var(--fontsize1-fontsize);
+  color: var(--font-color);
+  margin-top: var(--margin1-margin);
+}
+section.sections > section > .contents {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: var(--margin1-margin);
+}
+section.sections > section > .contents .content > .img {
+  width: 147.3333333333333px;
+  height: 147.3333333333333px;
+  overflow: hidden;
+  margin: 0 var(--con_margin-margin) 5px 0;
+}
+section.sections > section > .contents .artist > .img {
+  border-radius: 50%;
+}
+section.sections > section > .contents .artist > .name,
+section.sections > section > .contents .artist > .sub_name {
+  text-align: center;
+}
+
+section.sections > section > .contents .content > .img > img {
+  width: 100%;
+  height: 100%;
+}
+section.sections > section > .contents .content > .name {
+  font-size: var(--fontsize2-fontsize);
+  color: var(--font-color);
+}
+section.sections > section > .contents .content > .sub_name {
+  font-size: var(--fontsize3-fontsize);
+  color: var(--font2-color);
+  line-height: 7px;
+  padding-bottom: 5px;
+}
+section.sections > .charts > .contents > .content .img {
+  width: 69px;
+  height: 69px;
+}
+section.sections > .charts > .contents > .content .img > img {
+  width: 100%;
+  height: 100%;
+}
+section.sections > .charts > .contents > .content .name {
+  width: 69px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--fontsize3-fontsize);
+}
+section.sections > .charts > .contents > .content .sub_name {
+  font-size: var(--fontsize3-fontsize);
+}

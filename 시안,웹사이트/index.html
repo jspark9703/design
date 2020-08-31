@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>brassmont</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main_section.css" />
+    <style>
+      :root {
+        --main-color: #6f4a8e;
+        --stricky-color: #221f3b;
+        --bg-color: #050505;
+        --font-color: #ebebeb;
+        --font2-color: #ccc;
+        --margin1-margin: 16.66666666666667px;
+        --side-marigin: 26.66666666666667px;
+        --con_margin-margin: 10px;
+        --fontsize1-fontsize: 20px;
+        --fontsize2-fontsize: 10px;
+        --fontsize3-fontsize: 3.33333px;
+      }
+      *{margin: 0;border: none;padding: 0;font-size: 14px;box-sizing: border-box;}
+      a{text-decoration: none;color: black;}
+      img{vertical-align: top;}
+      ul,ol,li{list-style: none;}
+      body {
+        font-family: "Noto Sans KR";
+      }
+      .wrap {
+        width: 100%;
+        max-width: 425px;
+        margin: 0 auto;
+      }
+      
+      section.sticky{
+        flex-flow: row nowrap;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        height: 133.3333333333333px;
+        background-color: var(--stricky-color);
+      }
+      section.sticky>.playbox{
+        height: 66.66666666666667px;
+        display: flex;
+        flex-flow:row nowrap;
+        align-items: center;
+      }
+      section.sticky>.playbox>.play_img{
+        margin-left: 39.66666666666667px;
+        width: 36px;
+        height: 36px;
+        overflow: hidden;
+      }
+      section.sticky>.playbox>.play_img>img{
+        width: 100%;
+        height: 100%;
+      }
+      section.sticky>.playbox>.play_info{
+        width: 150px;
+        margin-left: 13px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      section.sticky>.playbox>.play_info>.name{
+        color: var(--font-color);
+        font-size: var(--fontsize2-fontsize);
+        font-weight: bold;
+      }
+      section.sticky>.playbox>.play_info>.artist{
+        color: var(--font2-color);
+        font-size: var(--fontsize2-fontsize);
+      }
+      section.sticky>.playbox>.play_btn{
+        width: 69px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15px;
+      }
+      section.sticky>.playbox>.play_btn>.btn_play{
+        width: 22.66666666666667px;
+        
+      }
+      section.sticky>.playbox>.play_btn>.btn_next{
+        width: 12px;
+        height: 8px;
+      }
+      section.sticky>.playbox>.play_btn>.btn_play>img,
+      section.sticky>.playbox>.play_btn>.btn_next>img{
+        width: 100%;
+      }
+      section.sticky>.playbox>.play_line{
+        width: 100%;
+        height: 1px;
+        background-color: #999;
+        position: absolute;
+        bottom: 66.66666666666667px;
+      }
+      section.sticky>.playbox>.play_line::after{
+        content: '';
+        display: block;
+        background-color: var(--font-color);
+        width: 30%;
+        height: 1px;
+      }
+      section.sticky>.nav{
+        height:66.66666666666667px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        margin-top: 12px;
+      }
+      section.sticky>.nav>div{
+        height: 25px;
+        text-align: center;
+      }
+      section.sticky>.nav>div>img{
+        height: 100%;
+      }
+      section.sticky>.nav>div>.txt{
+        font-size: var(--fontsize2-fontsize);
+        color: var(--font-color);
+        font-weight: bold;
+        text-align: center;
+        line-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <img src="./img/자산 1hdpi.png" alt="" />
+        </div>
+        <div class="header_icon">
+          <div class="search"></div>
+          <div class="account"></div>
+        </div>
+      </header>
+      <section class="sections">
+        <section class="favarite">
+          <div class="tit">즐겨듣는 음악</div>
+          <div class="contents">
+            <div class="artist content">
+              <div class="img">
+                <img
+                  src="./img/82866240_198011221405356_696349585829932257_n.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">백예린</div>
+              <div class="sub_name">구독자:30만</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img src="./img/14116820.jpg" alt="" />
+              </div>
+              <div class="name">jazz music playist</div>
+              <div class="sub_name">내 재생목록</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img src="./img/20334444.jpg" alt="" />
+              </div>
+              <div class="name">그댄날</div>
+              <div class="sub_name">김민</div>
+            </div>
+          </div>
+        </section>
+        <section class="charts">
+          <div class="tit">인기차트</div>
+          <div class="contents">
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/14116820.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">돌핀</div>
+              <div class="sub_name">오마이걸</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/82866240_198011221405356_696349585829932257_n.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">la la la love song</div>
+              <div class="sub_name">백예린</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/20334444.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">maria</div>
+              <div class="sub_name">화사</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/20343816.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">not shy</div>
+              <div class="sub_name">itcy</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/20344912.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">dynomite</div>
+              <div class="sub_name">방탄소년단</div>
+            </div>
+        </section>
+        <section class="playlist">
+          <div class="tit">추천 재생목록</div>
+          <div class="contents">
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/20345789.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">감미로운 인디곡</div>
+              <div class="sub_name">추천재생목록</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/20346167.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">신나는 걸그룹</div>
+              <div class="sub_name">추천재생목록</div>
+            </div>
+            <div class="content">
+              <div class="img">
+                <img
+                  src="./img/20334444.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name">재즈풍</div>
+              <div class="sub_name">추천재생목록</div>
+            </div>
+        </section>
+      </section>
+      <section class="sticky">
+        <section class="playbox">
+          <div class="play_img">
+            <img src="./img/74642768_542144556347153_1508808733379183412_n.jpg" alt="">
+          </div>
+          <div class="play_info">
+            <div class="name">square</div>
+            <div class="artist">백예린</div>
+          </div>
+          <div class="play_btn">
+            <div class="btn_play">
+              <img src="./img/재생.png" alt="">
+            </div>
+            <div class="btn_next">
+              <img src="./img/다음곡.png" alt="">
+            </div>
+          </div>
+          <div class="play_line"></div>
+        </section>
+        <section class="nav">
+          <div class="home">
+            <img src="./img/홈.png" alt="">
+            <div class="txt">home</div>
+          </div>
+          <div class="moreinfo">
+            <img src="./img/둘러보기.png" alt="">
+            <div class="txt">둘러보기</div>
+          </div>
+          <div class="storage">
+            <img src="./img/보관함.png" alt="">
+            <div class="txt">보관함</div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
